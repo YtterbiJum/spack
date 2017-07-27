@@ -45,4 +45,4 @@ class Gdbm(AutotoolsPackage):
     depends_on("readline")
 
     def configure_args(self):
-        return ['--enable-libgdbm-compat']
+        return ['--enable-libgdbm-compat', 'CFLAGS=-D_GNU_SOURCE']
